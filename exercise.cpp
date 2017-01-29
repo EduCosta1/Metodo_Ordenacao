@@ -5,15 +5,15 @@
 #include "locale.h"
 #define tamanho 5000
 
-/* para teste
+/*Para testes
 for (i = 0; i < tamanho; i++)
 {
 	printf("%d \n", num[i]);
 }*/
-//declaração de variaveis 
+//Declaração de variaveis 
 clock_t t, t2;
 int num[tamanho], cmp, j, i, min, x, k;
-//método de inserção
+//Método de inserção
 void insercao( int num[tamanho])
 {
 	t = clock();
@@ -31,7 +31,7 @@ void insercao( int num[tamanho])
 	t = clock() - t;
 	printf("Tempo para o método de INSERÇÃO		é	%f segundos.\n", ((float)t) / CLOCKS_PER_SEC);
 }
-//método de bolha
+//Método de bolha
 void bolha(int num[tamanho])
 {
 	t = clock();
@@ -96,7 +96,6 @@ void shellsort(int num[tamanho])
 	t = clock() - t;
 	printf("Tempo para o método de SHELLSORT	é	%f segundos.\n", ((float)t) / CLOCKS_PER_SEC); 
 }
-// método desconhecido
 void desconhecido(int num[tamanho])
 {
 	t = clock();
@@ -115,7 +114,7 @@ void desconhecido(int num[tamanho])
 	t = clock() - t;
 	printf("Tempo para o método DESCONHECIDO	é	%f segundos.\n", ((float)t) / CLOCKS_PER_SEC);
 }
-// ordenando vetor aleatorio
+//Ordenando vetor aleatorio
 void aleatorio()
 {
 	for (i = 0; i < tamanho; i++)
@@ -128,7 +127,7 @@ void aleatorio()
 	shellsort(num);
 	desconhecido(num);
 }	
-// ordenando vetor em ordem crescente
+//Ordenando vetor em ordem crescente
 void ordemcrescente()
 {	
 	for (i = 0; i < tamanho; i++)
@@ -152,7 +151,7 @@ void ordemcrescente()
 	shellsort(num);
 	desconhecido(num);
 }	
-// ordenando vetor em ordem decrescente
+//Ordenando vetor em ordem decrescente
 void ordemdecrescente()
 {	
 	for (i = 0; i < tamanho; i++)
